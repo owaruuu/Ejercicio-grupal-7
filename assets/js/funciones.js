@@ -13,6 +13,8 @@ nombre.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
 correo.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
 mensaje.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
 
+
+
 function validar(event){
     let contador = 0;
     let mensajeAlerta = "";
@@ -44,8 +46,12 @@ function validar(event){
             event.preventDefault();
         }    
     }
-}
+};
 
 function cleanClass(event, clase){
     event.target.classList.remove(clase);
-}
+};
+
+function mostrarMensaje() {
+    alert("Te esperamos en la sección contacto");
+};
