@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Te lo vendo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6721ab6409.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">TE LO VENDO</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vender algo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/estadísticas.html">Estadisticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container-fluid">
+        <table id="miTabla" class="table table-striped table-bordered">
+            <caption>Ultimos articulos vendidos</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Nombre Vendedor</th>
+                    <th>Nombre Comprador</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Televisor</td>
+                    <td>1</td>
+                    <td>$150.000</td>
+                    <td>Jose Feliz</td>
+                    <td>Mateo</td>
+                </tr>
+                <tr>
+                    <td>Mesa Comedor</td>
+                    <td>1</td>
+                    <td>$30.000</td>
+                    <td>Elba Lazo</td>
+                    <td>Tomas</td>
+                </tr>
+                <tr>
+                    <td>Chaquetas Cuero</td>
+                    <td>2</td>
+                    <td>$300.000</td>
+                    <td>Elmer Curio</td>
+                    <td>Gabriel</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>1</td>
+                    <td>$85.000</td>
+                    <td>Alan Brito</td>
+                    <td>Luciano</td>
+                </tr>
+                <tr>
+                    <td>Raquetas de Tennis</td>
+                    <td>3</td>
+                    <td>$60.000</td>
+                    <td>Aquiles Bailo</td>
+                    <td>Maria</td>
+                </tr>
+                <tr>
+                    <td>Boligrafos</td>
+                    <td>2</td>
+                    <td>$3.000</td>
+                    <td>Rosa Malcacho</td>
+                    <td>Antonella</td>
+                </tr>
+                <tr>
+                    <td>Mouse Gamer</td>
+                    <td>1</td>
+                    <td>$25.000</td>
+                    <td>Keca Galindo</td>
+                    <td>Trinidad</td>
+                </tr>
+                <tr>
+                    <td>Cuadernos</td>
+                    <td>10</td>
+                    <td>$8.000</td>
+                    <td>Zacarias Flores</td>
+                    <td>Emilia</td>
+                </tr>
+                <tr>
+                    <td>Comics</td>
+                    <td>5</td>
+                    <td>$50.000</td>
+                    <td>Armando Casas</td>
+                    <td>Isidora</td>
+                </tr>
+                <tr>
+                    <td>Set de mancuernas</td>
+                    <td>1</td>
+                    <td>$40.000</td>
+                    <td>Paloma Maria</td>
+                    <td>Emma</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </main>
+
+  <footer class="mt-4 bg-light py-4">
+    
+    <h3 class="text-center">&#169 Equipo Deja Vu - 2023</h3>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" 
+    crossorigin="anonymous">
+  </script>
+
+    <script>
+        let table = new DataTable('#miTabla', {
+            // ordering: false
+            order: []
+        });
+    </script>
+</body>
+
+</html>

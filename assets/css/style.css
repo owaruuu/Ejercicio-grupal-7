@@ -1,0 +1,94 @@
+/* *{
+    border: 2px black solid;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+main {
+    margin: 15px 0 15px;
+}
+
+.title {
+    text-align: center;
+}
+
+nav {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+footer {
+    text-align: center;
+    /* color: white; */
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Para tabletas: */
+/*@media only screen and (min-width: 600px) {
+    img {
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 40px 16px;
+        margin-top: 32px;
+    }
+
+    nav {
+        padding: 16px;
+    }
+
+    .extracto {
+        padding: 0 16px;
+    }
+
+    .contacto {
+        width: 70%;
+    }
+}*/
+
+/* Para equipos de escritorio: */
+/*@media only screen and (min-width: 992px) {
+    .title {
+        text-align: left;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    img {
+        height: 180px;
+        width: 356px;
+        margin: 0 16px;
+    }
+
+    footer {
+        padding: 40px 16px;
+        margin-top: 100px;
+        text-align: right;
+    }
+
+    nav {
+        padding: 8px 16px;
+    }
+
+    .extracto {
+        padding: 0 16px;
+    }
+
+    .contacto {
+        width: 50%;
+    }
+}*/

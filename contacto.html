@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="/assets/js/funciones.js" defer></script>
+  </head>
+
+<body>
+    <header>
+        <h1 class="title">TE LO VENDO</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vender algo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/estadísticas.html">Estadisticas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main class="container-fluid">
+        <section>
+            <form id="form" name="contacto" class="bg-dark-subtle p-3 m-4">             
+                <label class="form-label">Nombre</label><br>
+                <input id="name-input" class="form-control" type="text">         
+                <br>
+                <label class="form-label">Correo electronico</label><br>
+                <input id="correo-input" class="form-control" type="email">
+                <br>
+                <label class="form-label">Mensaje :</label><br>
+                <textarea id="mensaje-input" class="form-control" placeholder="Ingresa tu comentario..." name="" id="" cols="30" rows="5"></textarea>
+                <br>
+                <input id="form-btn" class="btn btn-primary" type="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="mt-4 bg-light py-4">
+        <h3 class="text-center">&#169 Equipo Deja Vu - 2023</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" 
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
