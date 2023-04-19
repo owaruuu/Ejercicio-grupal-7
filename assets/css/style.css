@@ -18,15 +18,14 @@ main {
 
 nav {
     color: white;
-    background-color: blue;
+    background-color: rgb(127, 201, 71);
     text-align: center;
     padding: 8px 16px;
 }
 
 footer {
     text-align: center;
-    /* color: white; */
-    background-color: black;
+    background-color: rgb(58, 93, 64);
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
