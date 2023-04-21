@@ -1,19 +1,3 @@
-$(document).ready(function () {
-    $('#miTabla').DataTable({
-        responsive: true,
-        language: {
-            url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/es-CL.json',
-        }, ajax: 'assets/data/data.json',
-        columns: [
-            { data: 'id' },
-            { data: 'first_name' },
-            { data: 'email' },
-            { data: 'city' },
-            { data: 'enterprise' },
-        ],
-    });
-});
-
 const form = document.getElementById('form');
 const nombre = document.querySelector('#name-input');
 const correo = document.querySelector('#correo-input');
@@ -28,8 +12,6 @@ mensaje.addEventListener('input', (event) => cleanClass(event, 'is-invalid'));
 nombre.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
 correo.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
 mensaje.addEventListener('change', (event) => cleanClass(event, 'is-invalid'));
-
-
 
 function validar(event){
     let contador = 0;
@@ -72,16 +54,3 @@ function mostrarMensaje() {
     alert("Te esperamos en la sección contacto");
 };
 
-
-
-function agregar(id) {
-    
-    alert("Agregaste el artículo: " + document.getElementById(id).textContent);
-    carro(document.getElementById(id).textContent);
-}
-
-var msn = "El carro de compra cpntiene\n";
-
-function carro(articulo) {
-    msn += articulo + "\n";
-}
