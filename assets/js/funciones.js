@@ -71,3 +71,17 @@ function cleanClass(event, clase){
 function mostrarMensaje() {
     alert("Te esperamos en la sección contacto");
 };
+
+
+
+function agregar(id) {
+    
+    alert("Agregaste el artículo: " + document.getElementById(id).textContent);
+    carro(document.getElementById(id).textContent);
+}
+
+var msn = "El carro de compra cpntiene\n";
+
+function carro(articulo) {
+    msn += articulo + "\n";
+}

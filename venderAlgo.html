@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6721ab6409.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+  <script src="/assets/js/funciones.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">TE LO VENDO</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vender algo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/estadísticas.html">Estadisticas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section>
+            <article>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/assets/img/cautin.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="cautin" class="card-title">Cautín</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('cautin')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/assets/img/parlantes.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="parlantes" class="card-title">Parlantes</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('parlantes')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/assets/img/brocha.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="brocha" class="card-title">Brocha</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('brocha')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="/assets/img/oie_SCsrLX2tYXDZ.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="cartas" class="card-title">Juego de cartas</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('cartas')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/assets/img/oie_LLHUGdibnYOv.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="fonos" class="card-title">Audífonos</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('fonos')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/assets/img/oie_zNn7FrUEaDwL.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 id="silla" class="card-title">Silla</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary" onclick="agregar('silla')">Agregar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+        </section>
+      </main>
+      
+      <footer class="mt-4 bg-light py-4">    
+        <h3 class="text-center" onclick="mostrarMensaje()">&#169 Equipo Deja Vu - 2023</h3>
+      </footer>   
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" 
+      crossorigin="anonymous">
+    </script>
+</body>
+</html>
