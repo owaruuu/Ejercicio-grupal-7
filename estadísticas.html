@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6721ab6409.js" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+  <script src="/assets/js/funciones.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Vender algo</a>
+            <a class="nav-link" href="/venderAlgo.html">Vender algo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/estadísticas.html">Estadisticas</a>
@@ -47,17 +48,17 @@
   <main>
     <section class="container-fluid">
         <table id="miTabla" class="table table-striped table-bordered">
-            <caption>Ultimos articulos vendidos</caption>
+            <caption>Proveedores</caption>
             <thead class="table-dark">
                 <tr>
-                    <th>Nombre Producto</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                    <th>Nombre Vendedor</th>
-                    <th>Nombre Comprador</th>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Ciudad</th>
+                    <th>Empresa</th>
                 </tr>
             </thead>
-            <tbody>
+            <!--tbody>
                 <tr>
                     <td>Televisor</td>
                     <td>1</td>
@@ -128,7 +129,16 @@
                     <td>Paloma Maria</td>
                     <td>Emma</td>
                 </tr>
-            </tbody>
+            </tbody-->
+            <!--tfoot>
+              <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>País</th>
+                <th>Salario</th>
+            </tr>
+            </tfoot-->
         </table>
     </section>
   </main>
@@ -142,12 +152,12 @@
     crossorigin="anonymous">
   </script>
 
-    <script>
+    <!--script>
         let table = new DataTable('#miTabla', {
             // ordering: false
             order: []
         });
-    </script>
+    </script-->
 </body>
 
 </html>
