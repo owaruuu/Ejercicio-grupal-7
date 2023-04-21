@@ -12,6 +12,25 @@ $(document).ready(function () {
             { data: 'enterprise' },
         ],
     });
+
+    carro = [];
+
+    $(".articulos").click(function () {
+        alert("Agregaste al carro:   " + $(this).closest("div").siblings("div").find("h5").text());
+        carro.push($(this).closest("div").siblings("div").find("h5").text());
+    });
+
+    $("#verCarro").click(function () {
+        if (carro.length == 0) {
+            alert("El carro está vacío");
+        } else {
+            let mensaje = "";
+            carro.forEach(function (art) {
+                mensaje += art + "\n";
+            });
+            alert("El carro de compras contiene:\n" + mensaje);
+        }        
+    });    
 });
 
 const form = document.getElementById('form');
@@ -72,16 +91,10 @@ function mostrarMensaje() {
     alert("Te esperamos en la sección contacto");
 };
 
-
+/*let articulos = "El carro contiene";
 
 function agregar(id) {
-    
+    articulos = articulos + (document.getElementById(id).textContent);
     alert("Agregaste el artículo: " + document.getElementById(id).textContent);
-    carro(document.getElementById(id).textContent);
-}
+}*/
 
-var msn = "El carro de compra cpntiene\n";
-
-function carro(articulo) {
-    msn += articulo + "\n";
-}
